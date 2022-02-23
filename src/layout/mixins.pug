@@ -1,0 +1,10 @@
+mixin metatags(robots, canonical, imageUrl, pageName)
+  meta(name="robots", content=`${robots}`)
+  link(rel="canonical", href=`${canonical}`)
+  //- OPEN GRAPH
+  meta(property="og:type", content="website")
+  meta(property="og:url", content=`${canonical}`)
+  meta(property="og:image", content=`${imageUrl}`)
+  meta(property="og:title", content=`Talleres de la Torre - ${pageName}`)
+  <meta property="og:locale" content="es_ES" />
+  title Talleres de la Torre - #{ pageName }

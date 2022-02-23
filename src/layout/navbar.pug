@@ -1,0 +1,71 @@
+header.header 
+  .border-line-1 
+  .border-line-2
+  .site-identity
+    picture.site-logo
+      source(
+        media="(min-width: 1200px)",
+        srcset=require("./img/logo_sin_fondo_small.png").default
+      )
+      source(
+        media="(min-width: 600px)",
+        srcset=require("./img/logo_sin_fondo_xsmall.png").default
+      )
+      img(
+        src=require("./img/logo_sin_fondo_small.png").default,
+        alt="Logo de Talleres de la Torre"
+      )
+    //- .site-links 
+    navbar.social-links
+      a(
+        href="tel:+34952232392",
+        target="_blank",
+        rel="nofollow noreferrer noopener"
+      )
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#014495" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+        </svg>
+        | 952 23 23 92
+      a(
+        href="https://www.facebook.com/talleresdelatorre/",
+        target="_blank",
+        rel="nofollow noreferrer noopener"
+      )
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#014495" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+        </svg>
+        | talleresdelatorre
+      a(
+        href="https://www.facebook.com/talleresdelatorre/",
+        target="_blank",
+        rel="nofollow noreferrer noopener"
+      )
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="1.6rem" height="1.6rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#014495" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+        </svg>
+      a(
+        href="mailto:talleresdelatorre@gmail.com",
+        target="_blank",
+        rel="nofollow noreferrer noopener"
+      )
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="1.8rem" height="1.8rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="#014495" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <polyline points="3 7 12 13 21 7" />
+        </svg>
+        | talleresdelatorre@gmail.com
+    navbar.navigation
+      a(href="/index.html") Inicio
+      a(href="/galeria.html") Galería
+      .dropdown
+        button#services-button.dropdown-nav Servicios
+        #services-dropdown.section-dropdown
+          a(href="/servicios.html#chapa") Chapa
+          a(href="/servicios.html#pintura") Pintura
+          a(href="/servicios.html#calibracion") Calibración
+
+  .border-line-2
+  .border-line-1
