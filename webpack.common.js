@@ -11,15 +11,27 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-    }),
-    new HtmlWebpackPlugin({
       template: "./src/home.pug",
-      filename: "home.html",
+      filename: "index.html",
+      templateParameters: () => {
+        return require('./src/content/home.json');
+      }
     }),
     new CopyPlugin({
       patterns: [
-        { from: "./src/img/favicon/**/*", to: "" },
+        { from: "./src/img/favicon/**/*",
+        to: "",
+        noErrorOnMissing: true},
+      ],
+      patterns: [
+        { from: "./src/sitemap.xml",
+        to: "",
+        noErrorOnMissing: true},
+      ],
+      patterns: [
+        { from: "./src/robots.txt",
+        to: "",
+        noErrorOnMissing: true},
       ],
     }),
   ],
@@ -31,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.pug$/i,
-        use: ['html-loader', 'pug-html-loader'],
+        use: ['simple-pug-loader'],
       },
       {
         test: /\.m?js$/,
@@ -59,13 +71,30 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-      {
-        test: /\.(png|jpg|gif)$/i,
-        type: "asset",
-        generator: {
-          filename: 'img/[name][ext]',
-      },
-      },
+      // {
+      //   test: /\.(png|jpe?g|gif|svg)$/i,
+      //   type: "asset",
+      //   generator: {
+      //     filename: 'img/[name][ext]',
+      //   },
+      // },
+      // {
+      //   test: /\.(png|jpe?g|gif|svg|webp)$/i,
+      //   use : [
+      //     {
+      //       loader: `img-optimize-loader`,
+      //       options: {
+      //         compress: {
+      //           webp: {
+      //             quality: 95,
+      //           },
+      //           disableOnDevelopment: true,
+      //         },
+      //         name: 'img/[name].[ext]',
+      //       }
+      //     }
+      //   ]
+      // },
     ],
   },
 };

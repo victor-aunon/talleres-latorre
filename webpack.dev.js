@@ -14,4 +14,15 @@ module.exports = merge(common, {
     watchFiles: ["*.html", "*.css"],
     port: 9000,
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset",
+        generator: {
+          filename: 'img/[name][ext]',
+        },
+      },
+    ]
+  }
 });

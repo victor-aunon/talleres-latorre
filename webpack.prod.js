@@ -20,6 +20,22 @@ module.exports = merge(common, {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        use : [
+          {
+            loader: `img-optimize-loader`,
+            options: {
+              compress: {
+                webp: {
+                  quality: 95,
+                },
+              },
+              name: 'img/[name].[ext]',
+            }
+          }
+        ]
+      }
     ],
   },
   optimization: {

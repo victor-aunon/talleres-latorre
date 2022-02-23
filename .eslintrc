@@ -8,7 +8,8 @@
     "eslint-plugin-html",
     "eslint-plugin-css-modules",
     "simple-import-sort",
-    "import"
+    "import",
+    "pug",
   ],
   "settings": {
     "html/report-bad-indent": "error"
@@ -16,7 +17,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:prettier/recommended",
-    "plugin:css-modules/recommended"
+    "plugin:css-modules/recommended",
   ],
   "ignorePatterns": ["webpack.*.js", "/cypress/*", "/dist/*.js"],
   "rules": {
