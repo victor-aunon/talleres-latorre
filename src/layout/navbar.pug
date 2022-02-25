@@ -5,14 +5,14 @@ header.header
     picture.site-logo
       source(
         media="(min-width: 1200px)",
-        srcset=require("./img/logo_sin_fondo_small.png").default
+        srcset=require("./img/logo_sin_fondo_small.png")
       )
       source(
         media="(min-width: 600px)",
-        srcset=require("./img/logo_sin_fondo_xsmall.png").default
+        srcset=require("./img/logo_sin_fondo_xsmall.png")
       )
       img(
-        src=require("./img/logo_sin_fondo_small.png").default,
+        src=require("./img/logo_sin_fondo_xsmall.png"),
         alt="Logo de Talleres de la Torre"
       )
     //- .site-links 
@@ -58,14 +58,15 @@ header.header
         </svg>
         | talleresdelatorre@gmail.com
     navbar.navigation
-      a(href="/index.html") Inicio
-      a(href="/galeria.html") Galería
+      a#index-link(href="/index.html") Inicio
+      a#gallery-link(href="/galeria.html") Galería
       .dropdown
         button#services-button.dropdown-nav Servicios
         #services-dropdown.section-dropdown
           a(href="/servicios.html#chapa") Chapa
           a(href="/servicios.html#pintura") Pintura
           a(href="/servicios.html#calibracion") Calibración
+          a(href="/servicios.html#aire-acondicionado") Aire Acondicionado
 
   .border-line-2
   .border-line-1

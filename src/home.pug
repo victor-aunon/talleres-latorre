@@ -1,2 +1,82 @@
 extends ./layout/base
 include ./layout/mixins
+
+block content
+  .container 
+    .page-cover
+      picture
+        source(
+          media="(min-width: 700px)",
+          srcset=require("./img/talleres_de_la_torre.jpg")
+        )
+        source(
+          media="(min-width: 300px)",
+          srcset=require("./img/talleres_de_la_torre_small.jpg")
+        )
+        img#home-image.home-image(
+          src=require("./img/talleres_de_la_torre.jpg"),
+          alt="Logo de Talleres de la Torre"
+        )
+      h1#home-title.home-title Talleres de la Torre
+      h2#home-subtitle.home-subtitle Especialistas en trabajos de chapa y pintura
+
+    h2.section-title Nuestros servicios
+    .services
+      .service
+        a(href="/servicios.html#chapa" title="Trabajos de chapa") 
+            picture
+                source(
+                    media="(min-width: 900px)",
+                    srcset=require("./img/car_xsmall.png")
+                )
+                source(
+                    media="(min-width: 300px)",
+                    srcset=require("./img/car_thumbnail.png")
+                )
+                img.service-image(src=require("./img/car_small.png"), alt="Trabajos de chapa")
+            p.service-title Chapa
+      .service
+        a(href="/servicios.html#chapa" title="Trabajos de pintura") 
+            picture
+                source(
+                    media="(min-width: 900px)",
+                    srcset=require("./img/spray-paint_xsmall.png")
+                )
+                source(
+                    media="(min-width: 300px)",
+                    srcset=require("./img/spray-paint_thumbnail.png")
+                )
+                img.service-image(src=require("./img/spray-paint_small.png"), alt="Trabajos de pintura")
+            p.service-title Pintura
+      .service
+        a(href="/servicios.html#chapa" title="Trabajos de calibración de ADAS") 
+            picture
+                source(
+                    media="(min-width: 900px)",
+                    srcset=require("./img/calibrate_xsmall.png")
+                )
+                source(
+                    media="(min-width: 300px)",
+                    srcset=require("./img/calibrate_thumbnail.png")
+                )
+                img.service-image(src=require("./img/calibrate_small.png"), alt="Trabajos de calibración de ADAS")
+            p.service-title Calibrado ADAS
+
+    .fb-page(
+      data-href="https://www.facebook.com/talleresdelatorre/",
+      data-tabs="timeline",
+      data-width="500",
+      data-height="",
+      data-small-header="false",
+      data-adapt-container-width="true",
+      data-hide-cover="true",
+      data-show-facepile="true",
+      data-hide-cta="true"
+    )
+      blockquote.fb-xfbml-parse-ignore(
+        cite="https://www.facebook.com/talleresdelatorre/"
+      )
+        a(href="https://www.facebook.com/talleresdelatorre/")
+          | Talleres De La Torre
+    div#fb-root
+    script(async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="sjuCOJvs")

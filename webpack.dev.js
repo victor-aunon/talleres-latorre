@@ -8,7 +8,7 @@ module.exports = merge(common, {
   target: "web",
   devServer: {
     static: {
-      directory: "./dist",
+      directory: "./src",
       watch: true
     },
     watchFiles: ["*.html", "*.css"],

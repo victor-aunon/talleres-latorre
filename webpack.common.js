@@ -17,6 +17,20 @@ module.exports = {
         return require('./src/content/home.json');
       }
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/galeria.pug",
+      filename: "galeria.html",
+      templateParameters: () => {
+        return require('./src/content/galeria.json');
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/servicios.pug",
+      filename: "servicios.html",
+      templateParameters: () => {
+        return require('./src/content/servicios.json');
+      }
+    }),
     new CopyPlugin({
       patterns: [
         { from: "./src/img/favicon/**/*",
