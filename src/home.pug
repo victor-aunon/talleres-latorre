@@ -6,77 +6,261 @@ block content
     .page-cover
       picture
         source(
+          media="(min-width: 1000px)",
+          srcset=require("./img/talleres_de_la_torre_large.jpg")
+        )
+        source(
           media="(min-width: 700px)",
-          srcset=require("./img/talleres_de_la_torre.jpg")
+          srcset=require("./img/talleres_de_la_torre_medium.jpg")
         )
         source(
           media="(min-width: 300px)",
           srcset=require("./img/talleres_de_la_torre_small.jpg")
         )
         img#home-image.home-image(
-          src=require("./img/talleres_de_la_torre.jpg"),
+          src=require("./img/talleres_de_la_torre_large.jpg"),
           alt="Logo de Talleres de la Torre"
         )
       h1#home-title.home-title Talleres de la Torre
       h2#home-subtitle.home-subtitle Especialistas en trabajos de chapa y pintura
 
     h2.section-title Nuestros servicios
+    p.section-text Somos personal cualificado en la mecánica de chapa y pintura para la preparación y reparación de carrocerías de automóviles. 
+      br
+      | Diplomados para el perfecto calibrado de los sensores de frenada de su vehículo.
     .services
       .service
-        a(href="/servicios.html#chapa" title="Trabajos de chapa") 
-            picture
-                source(
-                    media="(min-width: 900px)",
-                    srcset=require("./img/car_xsmall.png")
-                )
-                source(
-                    media="(min-width: 300px)",
-                    srcset=require("./img/car_thumbnail.png")
-                )
-                img.service-image(src=require("./img/car_small.png"), alt="Trabajos de chapa")
-            p.service-title Chapa
+        a(href="/servicios.html#chapa", title="Servicios de chapa") 
+          picture
+            source(
+              media="(min-width: 900px)",
+              srcset=require("./img/car_xsmall.png")
+            )
+            source(
+              media="(min-width: 300px)",
+              srcset=require("./img/car_thumbnail.png")
+            )
+            img.service-image(
+              src=require("./img/car_small.png"),
+              alt="Servicios de chapa"
+            )
+          p.service-title Chapa
       .service
-        a(href="/servicios.html#chapa" title="Trabajos de pintura") 
-            picture
-                source(
-                    media="(min-width: 900px)",
-                    srcset=require("./img/spray-paint_xsmall.png")
-                )
-                source(
-                    media="(min-width: 300px)",
-                    srcset=require("./img/spray-paint_thumbnail.png")
-                )
-                img.service-image(src=require("./img/spray-paint_small.png"), alt="Trabajos de pintura")
-            p.service-title Pintura
+        a(href="/servicios.html#chapa", title="Servicios de pintura") 
+          picture
+            source(
+              media="(min-width: 900px)",
+              srcset=require("./img/spray-paint_xsmall.png")
+            )
+            source(
+              media="(min-width: 300px)",
+              srcset=require("./img/spray-paint_thumbnail.png")
+            )
+            img.service-image(
+              src=require("./img/spray-paint_small.png"),
+              alt="Servicios de pintura"
+            )
+          p.service-title Pintura
       .service
-        a(href="/servicios.html#chapa" title="Trabajos de calibración de ADAS") 
-            picture
-                source(
-                    media="(min-width: 900px)",
-                    srcset=require("./img/calibrate_xsmall.png")
-                )
-                source(
-                    media="(min-width: 300px)",
-                    srcset=require("./img/calibrate_thumbnail.png")
-                )
-                img.service-image(src=require("./img/calibrate_small.png"), alt="Trabajos de calibración de ADAS")
-            p.service-title Calibrado ADAS
+        a(
+          href="/servicios.html#chapa",
+          title="Servicios de calibración de ADAS"
+        ) 
+          picture
+            source(
+              media="(min-width: 900px)",
+              srcset=require("./img/calibrate_xsmall.png")
+            )
+            source(
+              media="(min-width: 300px)",
+              srcset=require("./img/calibrate_thumbnail.png")
+            )
+            img.service-image(
+              src=require("./img/calibrate_small.png"),
+              alt="Servicios de calibración de ADAS"
+            )
+          p.service-title Calibrado ADAS
 
-    .fb-page(
-      data-href="https://www.facebook.com/talleresdelatorre/",
-      data-tabs="timeline",
-      data-width="500",
-      data-height="",
-      data-small-header="false",
-      data-adapt-container-width="true",
-      data-hide-cover="true",
-      data-show-facepile="true",
-      data-hide-cta="true"
-    )
-      blockquote.fb-xfbml-parse-ignore(
-        cite="https://www.facebook.com/talleresdelatorre/"
-      )
-        a(href="https://www.facebook.com/talleresdelatorre/")
-          | Talleres De La Torre
-    div#fb-root
-    script(async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="sjuCOJvs")
+    h2.section-title Nuestros trabajos
+    .works 
+      //- First work
+      .work 
+        .comparison-img-container
+          picture 
+            source(
+              media="(min-width: 1000px)",
+              srcset=require("./img/mustang_antes_large.jpg")
+            )
+            source(
+              media="(min-width: 700px)",
+              srcset=require("./img/mustang_antes_medium.jpg")
+            )
+            source(
+              media="(min-width: 400px)",
+              srcset=require("./img/mustang_antes_small.jpg")
+            )
+            source(
+              media="(min-width: 200px)",
+              srcset=require("./img/mustang_antes_xsmall.jpg")
+            )
+            img.comparison-img(
+              src=require("./img/mustang_antes_large.jpg"),
+              alt="Reparación costado lateral Ford Mustang"
+            )
+
+          picture 
+            source(
+              media="(min-width: 1000px)",
+              srcset=require("./img/mustang_despues_large.jpeg")
+            )
+            source(
+              media="(min-width: 700px)",
+              srcset=require("./img/mustang_despues_medium.jpeg")
+            )
+            source(
+              media="(min-width: 400px)",
+              srcset=require("./img/mustang_despues_small.jpeg")
+            )
+            source(
+              media="(min-width: 200px)",
+              srcset=require("./img/mustang_despues_xsmall.jpeg")
+            )
+            img.comparison-img-overlay(
+              src=require("./img/mustang_despues_large.jpeg"),
+              alt="Reparación costado lateral Ford Mustang arreglado"
+            )
+          <input type="range" min="0" max="100" value="50" class="comparison-img-slider" autocomplete="off">
+          p.comparison-tooltip Desliza el punto a derecha e izquierda
+        a.comparison-show-more(href="/galeria#mustang") Ver más 🡵
+      //- Second work
+      .work 
+        .comparison-img-container
+          picture 
+            source(
+              media="(min-width: 1000px)",
+              srcset=require("./img/bmw_antes_large.jpg")
+            )
+            source(
+              media="(min-width: 700px)",
+              srcset=require("./img/bmw_antes_medium.jpg")
+            )
+            source(
+              media="(min-width: 400px)",
+              srcset=require("./img/bmw_antes_small.jpg")
+            )
+            source(
+              media="(min-width: 200px)",
+              srcset=require("./img/bmw_antes_xsmall.jpg")
+            )
+            img.comparison-img(
+              src=require("./img/bmw_antes_large.jpg"),
+              alt="Reparación frontal BMW"
+            )
+
+          picture 
+            source(
+              media="(min-width: 1000px)",
+              srcset=require("./img/bmw_despues_large.jpg")
+            )
+            source(
+              media="(min-width: 700px)",
+              srcset=require("./img/bmw_despues_medium.jpg")
+            )
+            source(
+              media="(min-width: 400px)",
+              srcset=require("./img/bmw_despues_small.jpg")
+            )
+            source(
+              media="(min-width: 200px)",
+              srcset=require("./img/bmw_despues_xsmall.jpg")
+            )
+            img.comparison-img-overlay(
+              src=require("./img/bmw_despues_large.jpg"),
+              alt="Reparación frontal BMW arreglado"
+            )
+          <input type="range" min="0" max="100" value="50" class="comparison-img-slider" autocomplete="off">
+          p.comparison-tooltip Desliza el punto a derecha e izquierda
+        a.comparison-show-more(href="/galeria#bmw") Ver más 🡵
+      //- Third work
+      .work 
+        .comparison-img-container
+          picture 
+            source(
+              media="(min-width: 1000px)",
+              srcset=require("./img/peugeot_antes_large.jpg")
+            )
+            source(
+              media="(min-width: 700px)",
+              srcset=require("./img/peugeot_antes_medium.jpg")
+            )
+            source(
+              media="(min-width: 400px)",
+              srcset=require("./img/peugeot_antes_small.jpg")
+            )
+            source(
+              media="(min-width: 200px)",
+              srcset=require("./img/peugeot_antes_xsmall.jpg")
+            )
+            img.comparison-img(
+              src=require("./img/peugeot_antes_large.jpg"),
+              alt="Reparación frontal Peugeot 108"
+            )
+
+          picture 
+            source(
+              media="(min-width: 1000px)",
+              srcset=require("./img/peugeot_despues_large.jpg")
+            )
+            source(
+              media="(min-width: 700px)",
+              srcset=require("./img/peugeot_despues_medium.jpg")
+            )
+            source(
+              media="(min-width: 400px)",
+              srcset=require("./img/peugeot_despues_small.jpg")
+            )
+            source(
+              media="(min-width: 200px)",
+              srcset=require("./img/peugeot_despues_xsmall.jpg")
+            )
+            img.comparison-img-overlay(
+              src=require("./img/peugeot_despues_large.jpg"),
+              alt="Reparación frontal Peugeot 108 arreglado"
+            )
+          <input type="range" min="0" max="100" value="50" class="comparison-img-slider" autocomplete="off">
+          p.comparison-tooltip Desliza el punto a derecha e izquierda
+        a.comparison-show-more(href="/galeria#peugeot") Ver más 🡵
+
+    h2.section-title Ven a visitarnos
+    .map-and-fb
+      .map
+        iframe(
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCT9vrw2zGRXQ9DN5cYGfQGuHhvPmnl_n8&q=place_id:ChIJwR8_WYz5cg0RZrMGYwSD1QA&zoom=16",
+          frameborder="0",
+          allowfullscreen
+        )
+      .fb-container
+        #fb-root
+        script(
+          async,
+          defer,
+          crossorigin="anonymous",
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0",
+          nonce="sjuCOJvs"
+        )
+        .fb-page(
+          data-href="https://www.facebook.com/talleresdelatorre/",
+          data-tabs="timeline",
+          data-width="400",
+          data-height="600",
+          data-small-header="false",
+          data-adapt-container-width="false",
+          data-hide-cover="true",
+          data-show-facepile="true",
+          data-hide-cta="true"
+        )
+          blockquote.fb-xfbml-parse-ignore(
+            cite="https://www.facebook.com/talleresdelatorre/"
+          )
+            a(href="https://www.facebook.com/talleresdelatorre/")
+              | Talleres De La Torre
