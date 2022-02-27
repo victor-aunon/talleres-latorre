@@ -1,5 +1,8 @@
 import "../css/normalize.css";
 import "../css/styles.scss";
+import '../css/wap_styles.css';
+
+import './wapMain.js';
 
 const pages = {
   index: "index-link",
