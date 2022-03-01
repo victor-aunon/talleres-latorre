@@ -5,12 +5,22 @@ html(lang="es")
     meta(http-equiv="X-UA-Compatible, refresh", content="IE=edge")
     meta(
       http-equiv="Content-Security-Policy",
-      content="script-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://connect.facebook.net https://www.facebook.com https://web.facebook.com 'unsafe-inline'; object-src 'self'"
+      content="script-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://www.google.com https://connect.facebook.net https://www.facebook.com https://web.facebook.com; object-src 'self'"
     )
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(name="description", content="")
     //- Include metatags
     +metatags(robots, canonical, imageUrl, pageName)
+    //- Favicon
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/src/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/src/img/favicon/safari-pinned-tab.svg" color="#203fdb">
+    <link rel="shortcut icon" href="/src/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/src/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     link(rel="preconnect", href="https://fonts.googleapis.com")
     link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
     link(
