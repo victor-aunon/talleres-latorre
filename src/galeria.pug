@@ -1,2 +1,504 @@
 extends ./layout/base
 include ./layout/mixins
+
+block content
+  .container
+    h1.section-title.fit Galería de imágenes
+    section#mustang.products
+      p.section-text.editable Reparación del costado lateral y paragolpes trasero de un Ford Mustang 5.0
+    #gallery-mustang.product-gallery
+      a.gallery-element.gallery-mustang(
+        href="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-1_xlarge.jpg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-1_xlarge.jpg 1500w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-1_large.jpg 1200w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-1_medium.jpg 800w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-1_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-1_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-1_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-1_medium.jpg"),
+            alt="Reparación costado lateral Ford Mustang 1"
+          )
+      a.gallery-element.gallery-mustang(
+        href="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-2_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-2_xlarge.jpeg 1500w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-2_large.jpeg 1200w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-2_medium.jpeg 800w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-2_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-2_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-2_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-2_medium.jpeg"),
+            alt="Reparación costado lateral Ford Mustang 2"
+          )
+      a.gallery-element.gallery-mustang(
+        href="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-3_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-3_xlarge.jpeg 1500w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-3_large.jpeg 1200w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-3_medium.jpeg 800w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-3_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-3_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-3_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-3_medium.jpeg"),
+            alt="Reparación costado lateral Ford Mustang 3"
+          )
+      a.gallery-element.gallery-mustang(
+        href="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-4_xlarge.jpg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-4_xlarge.jpg 1500w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-4_large.jpg 1200w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-4_medium.jpg 800w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-4_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-4_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-4_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-4_medium.jpg"),
+            alt="Reparación costado lateral Ford Mustang 4"
+          )
+      a.gallery-element.gallery-mustang(
+        href="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-5_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-5_xlarge.jpeg 1500w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-5_large.jpeg 1200w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-5_medium.jpeg 800w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-5_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-5_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-5_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-5_medium.jpeg"),
+            alt="Reparación costado lateral Ford Mustang 5"
+          )
+      a.gallery-element.gallery-mustang(
+        href="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-6_xlarge.jpg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/mustang/talleres-de-la-torre-ford-mustang-6_xlarge.jpg 1500w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-6_large.jpg 1200w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-6_medium.jpg 800w, /img/galerias/mustang/talleres-de-la-torre-ford-mustang-6_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-6_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-6_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/mustang/talleres-de-la-torre-ford-mustang-6_medium.jpg"),
+            alt="Reparación costado lateral Ford Mustang 6"
+          )
+
+    section#bmw-m2.products
+      p.section-text.editable Reparación de la parte frontal de un BMW M2 Performance
+    #gallery-bmw-m2.product-gallery
+      a.gallery-element.gallery-bmw(
+        href="/img/galerias/bmw/chapa-pintura-malaga-bmw-m2-1_large.jpg",
+        data-pswp-width="1200",
+        data-pswp-height="704",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/bmw/chapa-pintura-malaga-bmw-m2-1_large.jpg 1200w, /img/galerias/bmw/chapa-pintura-malaga-bmw-m2-1_medium.jpg 800w, /img/galerias/bmw/chapa-pintura-malaga-bmw-m2-1_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-1_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-1_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-1_medium.jpg"),
+            alt="Reparación parte frontal de un BMW M2 Performance 1"
+          )
+      a.gallery-element.gallery-bmw(
+        href="/img/galerias/bmw/chapa-pintura-malaga-bmw-m2-2_large.jpeg",
+        data-pswp-width="1200",
+        data-pswp-height="900",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/bmw/chapa-pintura-malaga-bmw-m2-2_large.jpeg 1200w, /img/galerias/bmw/chapa-pintura-malaga-bmw-m2-2_medium.jpeg 800w, /img/galerias/bmw/chapa-pintura-malaga-bmw-m2-2_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-2_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-2_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-2_medium.jpeg"),
+            alt="Reparación parte frontal de un BMW M2 Performance 2"
+          )
+      a.gallery-element.gallery-bmw(
+        href="/img/galerias/bmw/chapa-pintura-malaga-bmw-m2-3_large.jpeg",
+        data-pswp-width="1200",
+        data-pswp-height="900",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/bmw/chapa-pintura-malaga-bmw-m2-3_large.jpeg 1200w, /img/galerias/bmw/chapa-pintura-malaga-bmw-m2-3_medium.jpeg 800w, /img/galerias/bmw/chapa-pintura-malaga-bmw-m2-3_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-3_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-3_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-3_medium.jpeg"),
+            alt="Reparación parte frontal de un BMW M2 Performance 3"
+          )
+      a.gallery-element.gallery-bmw(
+        href="/img/galerias/bmw/chapa-pintura-malaga-bmw-m2-4_large.jpg",
+        data-pswp-width="1200",
+        data-pswp-height="704",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/bmw/chapa-pintura-malaga-bmw-m2-4_large.jpg 1200w, /img/galerias/bmw/chapa-pintura-malaga-bmw-m2-4_medium.jpg 800w, /img/galerias/bmw/chapa-pintura-malaga-bmw-m2-4_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-4_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-4_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/bmw/chapa-pintura-malaga-bmw-m2-4_medium.jpg"),
+            alt="Reparación parte frontal de un BMW M2 Performance 4"
+          )
+
+    section#peugeot.products
+      p.section-text.editable Reparación de la parte frontal de una Peugeot Partner
+    #gallery-peugeot.product-gallery
+      a.gallery-element.gallery-peugeot(
+        href="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-1_large.jpg",
+        data-pswp-width="1200",
+        data-pswp-height="584",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-1_large.jpg 1200w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-1_medium.jpg 800w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-1_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-1_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-1_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-1_medium.jpg"),
+            alt="Reparación parte frontal de una Peugeot Partner 1"
+          )
+      a.gallery-element.gallery-peugeot(
+        href="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-2_large.jpg",
+        data-pswp-width="1200",
+        data-pswp-height="584",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-2_large.jpg 1200w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-2_medium.jpg 800w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-2_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-2_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-2_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-2_medium.jpg"),
+            alt="Reparación parte frontal de una Peugeot Partner 2"
+          )
+      a.gallery-element.gallery-peugeot(
+        href="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-3_large.jpg",
+        data-pswp-width="1200",
+        data-pswp-height="584",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-3_large.jpg 1200w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-3_medium.jpg 800w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-3_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-3_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-3_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-3_medium.jpg"),
+            alt="Reparación parte frontal de una Peugeot Partner 3"
+          )
+      a.gallery-element.gallery-peugeot(
+        href="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-4_large.jpg",
+        data-pswp-width="1200",
+        data-pswp-height="584",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-4_large.jpg 1200w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-4_medium.jpg 800w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-4_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-4_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-4_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-4_medium.jpg"),
+            alt="Reparación parte frontal de una Peugeot Partner 4"
+          )
+      a.gallery-element.gallery-peugeot(
+        href="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-5_large.jpg",
+        data-pswp-width="1200",
+        data-pswp-height="584",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/peugeot/talleres-chapa-pintura-peugeot-5_large.jpg 1200w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-5_medium.jpg 800w, /img/galerias/peugeot/talleres-chapa-pintura-peugeot-5_small.jpg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-5_medium.jpg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-5_small.jpg")
+          )
+          img(
+            src=require("./img/galerias/peugeot/talleres-chapa-pintura-peugeot-5_medium.jpg"),
+            alt="Reparación parte frontal de una Peugeot Partner 5"
+          )
+
+    section#vespa.products
+      p.section-text.editable Pintado de una Vespa 125
+    #gallery-vespa.product-gallery
+      a.gallery-element.gallery-vespa(
+        href="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-1_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="844",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-1_xlarge.jpeg 1500w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-1_large.jpeg 1200w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-1_medium.jpeg 800w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-1_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-1_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-1_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-1_medium.jpeg"),
+            alt="Pintado de una Vespa 125 1"
+          )
+      a.gallery-element.gallery-vespa(
+        href="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-2_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-2_xlarge.jpeg 1500w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-2_large.jpeg 1200w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-2_medium.jpeg 800w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-2_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-2_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-2_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-2_medium.jpeg"),
+            alt="Pintado de una Vespa 125 2"
+          )
+      a.gallery-element.gallery-vespa(
+        href="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-3_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-3_xlarge.jpeg 1500w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-3_large.jpeg 1200w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-3_medium.jpeg 800w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-3_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-3_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-3_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-3_medium.jpeg"),
+            alt="Pintado de una Vespa 125 3"
+          )
+      a.gallery-element.gallery-vespa(
+        href="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-4_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-4_xlarge.jpeg 1500w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-4_large.jpeg 1200w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-4_medium.jpeg 800w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-4_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-4_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-4_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-4_medium.jpeg"),
+            alt="Pintado de una Vespa 125 4"
+          )
+      a.gallery-element.gallery-vespa(
+        href="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-5_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/vespa/pintado-motocicleta-vespa-malaga-5_xlarge.jpeg 1500w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-5_large.jpeg 1200w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-5_medium.jpeg 800w, /img/galerias/vespa/pintado-motocicleta-vespa-malaga-5_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-5_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-5_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/vespa/pintado-motocicleta-vespa-malaga-5_medium.jpeg"),
+            alt="Pintado de una Vespa 125 5"
+          )
+    section#calibracion.products
+      p.section-text.editable Calibración de los sensores y cámaras de los sistemas avanzados de asistencia a la conducción (ADAS)
+    #gallery-calibracion.product-gallery
+      a.gallery-element.gallery-calibracion(
+        href="/img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-1_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-1_xlarge.jpeg 1500w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-1_large.jpeg 1200w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-1_medium.jpeg 800w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-1_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-1_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-1_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-1_medium.jpeg"),
+            alt="Calibrado de sensores de frenada y cámaras 1"
+          )
+      a.gallery-element.gallery-calibracion(
+        href="/img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-2_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-2_xlarge.jpeg 1500w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-2_large.jpeg 1200w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-2_medium.jpeg 800w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-2_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-2_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-2_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-2_medium.jpeg"),
+            alt="Calibrado de sensores de frenada y cámaras 2"
+          )
+      a.gallery-element.gallery-calibracion(
+        href="/img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-3_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-3_xlarge.jpeg 1500w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-3_large.jpeg 1200w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-3_medium.jpeg 800w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-3_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-3_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-3_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-3_medium.jpeg"),
+            alt="Calibrado de sensores de frenada y cámaras 3"
+          )
+      a.gallery-element.gallery-calibracion(
+        href="/img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-4_xlarge.jpeg",
+        data-pswp-width="1500",
+        data-pswp-height="1125",
+        target="_blank",
+        data-pswp-srcset="/img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-4_xlarge.jpeg 1500w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-4_large.jpeg 1200w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-4_medium.jpeg 800w, /img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-4_small.jpeg 500w"
+      )
+        picture
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-4_medium.jpeg")
+          )
+          source(
+            media="(min-width: 400px)",
+            srcset=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-4_small.jpeg")
+          )
+          img(
+            src=require("./img/galerias/calibracion/calibracion-sensores-camaras-vehiculo-malaga-4_medium.jpeg"),
+            alt="Calibrado de sensores de frenada y cámaras 4"
+          )
