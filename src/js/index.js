@@ -1,8 +1,7 @@
 import "../css/normalize.css";
 import "../css/styles.scss";
-import '../css/wap_styles.css';
-
-import './wapMain.js';
+import "../css/wap_styles.css";
+import "./wapMain.js";
 
 const pages = {
   index: "index-link",
@@ -67,21 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const tooltipObservers = [];
     // Put slider and images at 50%
     for (let i = 0; i < sliders.length; i++) {
-      images[i].style.clipPath =
-        "polygon(0 0," +
-        sliders[i].value +
-        "% 0," +
-        sliders[i].value +
-        "% 100%, 0 100%)";
+      images[
+        i
+      ].style.clipPath = `polygon(0 0,${sliders[i].value}% 0,${sliders[i].value}% 100%, 0 100%)`;
 
       // Set function when moving the slider
       sliders[i].oninput = () => {
-        images[i].style.clipPath =
-          "polygon(0 0," +
-          sliders[i].value +
-          "% 0," +
-          sliders[i].value +
-          "% 100%, 0 100%)";
+        images[
+          i
+        ].style.clipPath = `polygon(0 0,${sliders[i].value}% 0,${sliders[i].value}% 100%, 0 100%)`;
       };
 
       // Hide the tooltips when they are visible
@@ -108,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Replace copyright year
-  const copyYear = document.querySelector('#copyright-year');
+  const copyYear = document.querySelector("#copyright-year");
   const now = new Date();
   copyYear.textContent = now.getFullYear();
 });
