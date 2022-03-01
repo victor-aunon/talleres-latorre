@@ -120,6 +120,10 @@
     margin: 0.5rem 1.5rem;
 }
 
+.wap-contact-name {
+    margin: 0;
+}
+
 .wap-contact-button img {
     height: 30px;
     margin-right: 0.6rem;
