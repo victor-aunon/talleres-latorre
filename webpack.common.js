@@ -3,7 +3,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: "./src/js/index.js",
+  entry: {
+    bundle: "./src/js/index.js",
+    photoswipeGallery: "./src/js/photoswipe_gallery.js"
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: '[name]_[fullhash].js',
@@ -15,37 +18,46 @@ module.exports = {
       filename: "index.html",
       templateParameters: () => {
         return require('./src/content/home.json');
-      }
+      },
+      chunks: ['bundle'],
     }),
     new HtmlWebpackPlugin({
       template: "./src/galeria.pug",
       filename: "galeria.html",
       templateParameters: () => {
         return require('./src/content/galeria.json');
-      }
+      },
+      chunks: ['bundle', 'photoswipeGallery'],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/gallery_aux.pug",
+      filename: "galeria_aux.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/servicios.pug",
       filename: "servicios.html",
       templateParameters: () => {
         return require('./src/content/servicios.json');
-      }
+      },
+      chunks: ['bundle'],
     }),
     new CopyPlugin({
       patterns: [
-        { from: "./src/img/favicon/**/*",
-        to: "",
-        noErrorOnMissing: true},
-      ],
-      patterns: [
-        { from: "./src/sitemap.xml",
-        to: "",
-        noErrorOnMissing: true},
-      ],
-      patterns: [
-        { from: "./src/robots.txt",
-        to: "",
-        noErrorOnMissing: true},
+        { 
+          from: "./src/img/favicon/**/*",
+          to: "",
+          noErrorOnMissing: true
+        },
+        { 
+          from: "./src/sitemap.xml",
+          to: "",
+          noErrorOnMissing: true
+        },
+        { 
+          from: "./src/robots.txt",
+          to: "",
+          noErrorOnMissing: true
+        },
       ],
     }),
   ],
