@@ -3,7 +3,7 @@ footer.footer
   .border-line-2
   .footer-sections 
     .contact-data
-        h3.contact-data-title Contacto
+        h3.footer-section-title Contacto
         a(
           href="https://www.google.com/maps/place/Talleres+Procar+De+La+Torre/@36.6736988,-4.4730389,21z/data=!3m1!5s0xd72f98c5f50f63b:0xf2e8957665e9c209!4m5!3m4!1s0xd72f98c593f1fc1:0xd583046306b366!8m2!3d36.6737104!4d-4.473164",
           target="_blank",
@@ -47,12 +47,57 @@ footer.footer
           </svg>
           | talleresdelatorre
     .contact-data
-        h3.contact-data-title Horario
+        h3.footer-section-title Horario
         p.timetable-title Lunes - Viernes:
         p.timetable-text 8:30 - 14:00 | 16:00 - 19:30
-        p.timetable-title(style="margin-top: 2rem;") Sábados y domingos:
+        p.timetable-title.second Sábados y domingos:
         p.timetable-text Cerrado
-  .footer-links
+  .footer-sections
+    .partners.contact-data
+      h3.footer-section-title Trabajamos con las siguientes empresas
+      .partners-logos-block
+        picture.partner-logo
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/mapfre_xsmall.jpeg")
+          )
+          source(
+            media="(min-width: 600px)",
+            srcset=require("./img/mapfre_thumbnail.jpeg")
+          )
+          img(
+            src=require("./img/mapfre_xsmall.jpeg"),
+            alt="Logo Mapfre"
+          )
+        picture.partner-logo
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/dekra_xsmall.jpeg")
+          )
+          source(
+            media="(min-width: 600px)",
+            srcset=require("./img/dekra_thumbnail.jpeg")
+          )
+          img(
+            src=require("./img/dekra_xsmall.jpeg"),
+            alt="Logo Dekra"
+          )
+        picture.partner-logo
+          source(
+            media="(min-width: 1500px)",
+            srcset=require("./img/dsimobility_xsmall.jpg")
+          )
+          source(
+            media="(min-width: 600px)",
+            srcset=require("./img/dsimobility_thumbnail.jpg")
+          )
+          img(
+            src=require("./img/dsimobility_xsmall.jpg"),
+            alt="Logo DSI Mobility"
+          )
+    .footer-links.contact-data
+      a(href="/legal.html") Aviso legal
+      a(href="/privacidad.html") Política de privacidad
   .footer-copyright
     p.copyright 
      | Talleres de la Torre © 

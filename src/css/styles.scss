@@ -115,8 +115,8 @@ h5 p.editable {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0.5rem 1.5rem 1rem 0;
-    font-size: 0.9rem;
+    margin: 0.5rem 1rem 1rem 0;
+    font-size: 0.8rem;
 
     @media all and (min-width: 720px) {
       font-size: 1rem;
@@ -253,7 +253,7 @@ h5 p.editable {
     color: #ffffff;
     display: none;
     position: absolute;
-    bottom: 25%;
+    bottom: 30%;
     left: 2%;
     font-family: $title_font;
     font-size: 1.8rem;
@@ -272,12 +272,14 @@ h5 p.editable {
 
   .home-subtitle {
     @extend .home-title;
-    bottom: 2%;
+    bottom: 5%;
+    margin-bottom: 0;
     font-size: 1rem;
+    text-align: left;
 
     @include tablet {
       font-size: 1.5rem;
-      bottom: 5%;
+      bottom: 10%;
     }
   }
 }
@@ -366,8 +368,8 @@ h5 p.editable {
   align-items: center;
   transition: all 0.2s linear;
 
-  // Reduce the image of the third element
-  &:nth-of-type(3) {
+  // Reduce the image of the ADAS element
+  &:nth-of-type(1) {
     .service-image {
       width: 60%;
       margin: 10% 20%;
@@ -382,7 +384,7 @@ h5 p.editable {
     margin: 2rem 1rem 1rem 0;
   }
 
-  @media all and (min-width: 1400px) {
+  @include desktop {
     margin: 2rem 3rem;
   }
 
@@ -491,7 +493,7 @@ h5 p.editable {
     animation: pulse 2s infinite;
     pointer-events: none;
     user-select: none;
-    
+
     @include tablet {
       font-size: 1.1rem;
       left: calc(50% - 163px);
@@ -723,7 +725,7 @@ h5 p.editable {
 
   .contact-data {
     flex: 1 1 50%;
-    margin-left: 3.5rem;
+    margin-left: 2rem;
 
     a {
       color: inherit;
@@ -761,15 +763,6 @@ h5 p.editable {
       }
     }
 
-    .contact-data-title {
-      font-weight: bold;
-      font-size: 1.5rem;
-      text-align: left;
-      padding-left: 1rem;
-      margin-right: 5rem;
-      margin-bottom: 0.5rem;
-      border-bottom: 2px solid $secondary_color;
-    }
   }
   .legal-links {
     display: flex;
@@ -777,6 +770,53 @@ h5 p.editable {
     justify-content: center;
   }
 }
+
+.footer-section-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 1rem;
+  margin-right: 5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid $secondary_color;
+}
+
+.partners {
+  flex: 1 1 75% !important;
+
+  .partners-logos-block {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    .partner-logo {
+      max-width: 250px;
+      object-fit: contain;
+      margin: 1rem 1rem;
+    }
+
+  }
+}
+
+.footer-links {
+  flex: 1 1 25% !important;
+  padding-top: 4rem;
+
+  a {
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    &::before {
+      content: "🔸";
+      margin-right: 1rem;
+    }
+  }
+}
+
 
 .footer-copyright {
   padding: 0.5rem;
