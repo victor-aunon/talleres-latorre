@@ -1,0 +1,31 @@
+:root {
+    --instagram_iconSize: 60px;
+    --bottom_pos: 5.5rem;
+}
+
+.instagram-button {
+    position: fixed;
+    bottom: var(--bottom_pos);
+    right: 1rem;
+    height: var(--instagram_iconSize);
+    width: var(--instagram_iconSize);
+    cursor: pointer;
+    animation: instagram-fade-in 0.7s;
+}
+
+.instagram-button img {
+    width: 100%;
+    border: 2px solid var(--wap_secondary);
+    border-radius: 50%;
+}
+
+@keyframes  instagram-fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
