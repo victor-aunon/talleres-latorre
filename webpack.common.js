@@ -41,6 +41,30 @@ module.exports = {
       },
       chunks: ['bundle'],
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/legal.pug",
+      filename: "legal.html",
+      templateParameters: () => {
+        return require('./src/content/legal.json');
+      },
+      chunks: ['bundle'],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/privacidad.pug",
+      filename: "privacidad.html",
+      templateParameters: () => {
+        return require('./src/content/privacidad.json');
+      },
+      chunks: ['bundle'],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/cookies.pug",
+      filename: "cookies.html",
+      templateParameters: () => {
+        return require('./src/content/cookies.json');
+      },
+      chunks: ['bundle'],
+    }),
     new CopyPlugin({
       patterns: [
         { 
@@ -56,6 +80,11 @@ module.exports = {
         { 
           from: "./src/robots.txt",
           to: "",
+          noErrorOnMissing: true
+        },
+        { 
+          from: "./src/js/cookies-enabler.js",
+          to: "./js/cookies-enabler.js",
           noErrorOnMissing: true
         },
       ],

@@ -3,6 +3,7 @@ import "../css/styles.scss";
 import "../css/wap_styles.css";
 import "../css/insta_styles.css";
 import "./wapMain.js";
+import "./cookie_consent.js";
 
 const pages = {
   index: "index-link",
