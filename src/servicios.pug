@@ -1,2 +1,186 @@
 extends ./layout/base
 include ./layout/mixins
+
+block content
+  .container
+    h2.section-title.fit Calibración sistema ADAS
+
+    .accordion-block
+      button.accordion ¿Qué es el sistema ADAS?
+      .panel
+        p El Sistema Avanzado de Asistencia a la Conducción (
+          em Advanced Driver Assistance Systems
+          | ) mejora la seguridad del vehículo. El objetivo principal es proteger a los ocupantes del vehículo y a los usuarios de la vía.
+        p A diferencia de la capacidad de reacción del ser humano, estos sistemas son capaces de reaccionar en décimas de segundo reduciendo el riesgo de siniesto hasta en un 60%, según informes de la DGT.
+        p A partir de julio de 2022, los
+          strong  sistemas ADAS
+          |  son obligatorios en vehículos nuevos.
+        p Para la
+          strong  calibración de los sistemas ADAS
+          |  se deben realizar pruebas de evaluación en talleres especializados como Talleres de la Torre en
+          strong  Málaga
+          | , que ensaya y analiza los sistemas ADAS para probar su efectividad.
+      button.accordion ¿Cuáles son los sistema ADAS?
+      .panel
+        p Los sistemas ADAS son un gran avance en seguridad, pero ¿sabemos reconocer sus funciones? Aquí os dejamos algunos de los sistemas más utilizados:
+        ul
+          li
+            p
+              strong Frenado autónomo de emergencia ante peatones y ciclistas
+              |: activa los frenos de manera automática en un posible atropello. Su funcionamiento es óptimo en zonas urbanas y a baja velocidad.
+          li
+            p
+              strong Control de crucero adaptativo
+              |: nos permite mantener la misma velocidad y la distancia de seguridad de manera automática con los demás vehículos de la vía.
+          li
+            p
+              strong Frenado autónomo de emergencia
+              |: activa los frenos ante un riesgo de colisión, detecta frenadas repentinas y vehículos parados.
+          li
+            p
+              strong Mantenimiento de carril
+              |: identifica las líneas de la carretera y devuelve el coche al carril.
+          li
+            p
+              strong Avisador de ángulos muertos
+              |: nos avisa de nuestro entorno, por ejemplo, de vehículos con intención de adelantarnos.
+          li
+            p
+              strong Alerta de tráfico cruzado
+              |: detecta la llegada de otros vehículos cuando estamos realizando la marcha atrás.
+          li
+            p
+              strong Sensor de aparcamiento
+              |: nos informa de la distancia que tenemos con los vehículos que ya están aparcados.
+      button.accordion Beneficios que aporta la calibración del sistema ADAS
+      .panel
+        p El buen funcionamiento de los sistemas ADAS nos aporta tranquilidad, confort y seguridad en la conducción de tu vehículo.
+        p Es importante que la
+          strong  calibración de sistemas ADAS
+          |  se realice periódicamente para optimizar su funcionamiento, empleando el software adecuado para cada marca y modelo.
+        p Es por esto, que
+          strong  Talleres de la Torre en Málaga
+          |  es un taller especializado en la
+          strong  calibración de los sistemas ADAS
+          | , que sigue todos los protocolos necesarion para el mantenimiento de tus sistemas ADAS. Convirtiéndose en punto de referencia de importantes compañías de seguros, como
+          strong  Mapfre.
+
+    .adas-graph-block
+      p Tras realizar sustituciones de parachoques o parabrisas, es necesario llevar a cabo una
+        strong  calibración
+        | , de lo contrario, estos sistemas de seguridad vitales fallarán o funcionarán de manera incorrecta.
+      .adas-vehicle
+        picture
+          source(
+            media="(min-width: 1200px)",
+            srcset=require("./img/servicios/sistemas_adas_large.jpg")
+          )
+          source(
+            media="(min-width: 700px)",
+            srcset=require("./img/servicios/sistemas_adas_medium.jpg")
+          )
+          source(
+            media="(min-width: 300px)",
+            srcset=require("./img/servicios/sistemas_adas_small.jpg")
+          )
+          img(
+            src=require("./img/servicios/sistemas_adas_large.jpg"),
+            alt="Sistemas ADAS en el vehículo"
+          )
+        .clickable-element.rear
+        .clickable-element.top
+        .clickable-element.side
+        .clickable-element.front
+        .info.rear
+            p.adas-title Traseros
+            ul.adas-list
+              li Imagen de marcha atrás
+              li Asistente de aparcamiento
+              li Alerta de colisión trasera
+        .info.top
+            p.adas-title Delanteros
+            ul.adas-list
+              li Asistente de mantenimiento de carril
+              li Alerta de cambio de carril
+              li Monitoreo del estado del conductor
+        .info.side
+            p.adas-title Laterales
+            ul.adas-list
+              li Detección de ángulo muerto
+              li Monitor de visión periférica
+        .info.front
+            p.adas-title Delanteros
+            ul.adas-list
+              li Sistema de luces adaptativas
+              li Control de crucero adaptativo
+              li Alerta de colisión frontal
+              li Frenada de emergencia
+              li Sistema de visión nocturna
+
+    h2.section-title.fit Mecánica de chapa
+    .service-block
+      picture
+        source(
+          media="(min-width: 1200px)",
+          srcset=require("./img/servicios/servicio_de_mecanica_de_chapa_medium.jpg")
+        )
+        source(
+          media="(min-width: 800px)",
+          srcset=require("./img/servicios/servicio_de_mecanica_de_chapa_small.jpg")
+        )
+        source(
+          media="(min-width: 300px)",
+          srcset=require("./img/servicios/servicio_de_mecanica_de_chapa_xsmall.jpg")
+        )
+        img(
+          src=require("./img/servicios/servicio_de_mecanica_de_chapa_medium.jpg"),
+          alt="Servicio de mecánica de chapa en Málaga"
+        )
+      p Nuestras reparaciones tienen presentes los factores esenciales del diseño de las carrocerías para amortiguar los impactos peligrosos en el chasis, verificando que cada pieza cumpla con su cometido y proteger así la integridad de los pasajeros para su seguridad y bienestar.´
+
+    h2.section-title.fit Servicio de pintura
+    .service-block
+      picture
+        source(
+          media="(min-width: 1200px)",
+          srcset=require("./img/servicios/servicio_de_pintura_medium.jpg")
+        )
+        source(
+          media="(min-width: 800px)",
+          srcset=require("./img/servicios/servicio_de_pintura_small.jpg")
+        )
+        source(
+          media="(min-width: 300px)",
+          srcset=require("./img/servicios/servicio_de_pintura_xsmall.jpg")
+        )
+        img(
+          src=require("./img/servicios/servicio_de_pintura_medium.jpg"),
+          alt="Taller de pintura en Málaga"
+        )
+      p Una vez concluída la reparación en la chapa de las superficies dañadas, procedemos a tratar las pequeñas irregularidades y ondulaciones con productos de relleno, masillas de poliéster de gran consistencia, entre otros; realizando el posterior lijado para alisar y complementar superficies, utilizando, a continuación, las pinturas necesarias de marcas testadas y de calidad.
+
+    h2.section-title.fit Servicio de carga de gas y aire acondicionado
+    .service-block
+      picture
+        source(
+          media="(min-width: 1200px)",
+          srcset=require("./img/servicios/servicio_carga_de_gas_medium.jpg")
+        )
+        source(
+          media="(min-width: 800px)",
+          srcset=require("./img/servicios/servicio_carga_de_gas_small.jpg")
+        )
+        source(
+          media="(min-width: 300px)",
+          srcset=require("./img/servicios/servicio_carga_de_gas_xsmall.jpg")
+        )
+        img(
+          src=require("./img/servicios/servicio_carga_de_gas_medium.jpg"),
+          alt="Servicio carga de gas aire acondicionado en Málaga"
+        )
+      div
+        p Unidad de servicio de aire acondicionado potente y robusta con analizador de refrigerante integrado.
+        ul 
+          li Limpieza automática del circuito de aire acondicionado.
+          li Válida también para vehículos híbridos y eléctricos.
+          li Prueba de nitrógeno/gas integrado en la unidad y de acuerdo con la ley.

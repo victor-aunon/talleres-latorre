@@ -837,6 +837,285 @@ h5 p.editable {
 }
 /* =============== FIN DE FOOTER =============== */
 
+/* =============== SERVICIOS =============== */
+.accordion-block {
+  margin: 2rem auto;
+  max-width: 1000px;
+
+  .accordion {
+    font-family: $title_font;
+    font-weight: bold;
+    color: $main_color;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    border: 1px solid #555555;
+
+    &:nth-of-type(1) {
+      border-radius: 10px 10px 0 0;
+    }
+
+    &:nth-last-of-type(1) {
+      border-radius: 0 0 10px 10px;
+
+      &.opened{
+        border-radius: 0;
+      }
+    }
+
+    &:before {
+      content: ">  ";
+      color: $secondary_color;
+    }
+
+    &:after {
+      content: '▼';
+      font-size: 2rem;
+      color: $secondary_color;
+      float: right;
+    }
+
+    &.opened{
+      &:after {
+        content: '▲';
+        font-size: 2rem;
+        color: $secondary_color;
+        float: right;
+      }
+    }
+  }
+
+  .panel {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+    border: 1px solid #555555;
+    border-top: none;
+    border-bottom: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    &.opened {
+      &:nth-last-of-type(1) {
+        border-bottom: 1px solid #555555;
+        border-radius: 0 0 10px 10px;
+      }
+    }
+  }
+}
+
+.adas-graph-block {
+  margin: 2rem auto;
+  max-width: 1000px;
+  text-align: center;
+  height: max-content;
+
+  p {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+    @include tablet {
+      text-align: inherit;
+    }
+  }
+}
+
+.adas-vehicle {
+  position: relative;
+  margin-bottom: 5.3rem;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    margin-bottom: -3rem;
+  }
+
+  .clickable-element {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $secondary_color;
+    opacity: 0.75;
+    border: 2px solid red;
+    animation: pulse 2s infinite;
+
+    &.rear {
+      top: 16%;
+      left: 17%;
+
+      @include tablet {
+        top: 17%;
+      }
+    }
+
+    &.top {
+      top: 14%;
+      left: 54%;
+    }
+
+    &.side {
+      top: 0%;
+      left: 56%;
+
+      @include tablet {
+        top: 4%;
+      }
+    }
+
+    &.front {
+      top: 25%;
+      left: 78%;
+    }
+  }
+
+  .info {
+    display: none;
+    position: absolute;
+    bottom: -30%;
+    left: 10%;
+    text-align: left;
+    opacity: 0;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+
+    &.front {
+      bottom: -53%;
+    }
+
+
+    @include tablet {
+
+      &.rear {
+        bottom: -3%;
+        left: 2%;
+      }
+
+      &.top {
+        bottom: -3%;
+        left: 24%;
+      }
+
+      &.side {
+        bottom: 2%;
+        left: 54%;
+      }
+
+      &.front {
+        bottom: -3%;
+        left: 63%;
+      }
+    }
+
+    @include desktop {
+
+      &.rear {
+        bottom: 8%;
+        left: 2%;
+      }
+
+      &.top {
+        bottom: 8%;
+        left: 24%;
+      }
+
+      &.side {
+        bottom: 13%;
+        left: 54%;
+      }
+
+      &.front {
+        bottom: 8%;
+        left: 78%;
+      }
+    }
+
+    .adas-title {
+      text-transform: uppercase;
+      color: $secondary_color;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .adas-list {
+      padding: 0;
+      margin-top: 0.2rem;
+      line-height: 1.5rem;
+      list-style: '🔹';
+
+      li {
+        padding-left: 0.3rem;
+      }
+    }
+  }
+}
+
+.service-block {
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &:nth-of-type(even) {
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+
+    img {
+      box-shadow: 8px 8px 0px 0px  $main_color;
+    }
+  }
+
+  &:nth-last-of-type(1) {
+    margin-bottom: 3rem;
+  }
+
+  p {
+    flex: 1 0 60%;
+    padding: 1rem 0 0 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: left;
+    margin: 0;
+    
+    @include tablet {
+      padding: 1rem 1rem 0 1rem;
+    }
+
+    @include desktop {
+      text-align: justify;
+    }
+
+  }
+  
+  li {
+    font-size: 1.18rem;
+    margin-bottom: 0.3rem;
+  }
+
+  picture {
+    text-align: center;
+  }
+
+  img {
+    box-shadow: -8px 8px 0px 0px  $main_color;
+    border: 4px solid $secondary_color;
+  }
+  
+}
+/* =============== FIN DE SERVICIOS =============== */
+
 /* =============== ESTILOS DE PAGINAS LEGALES =============== */
 .legal-content {
 
@@ -904,7 +1183,7 @@ h5 p.editable {
   position: sticky;
   bottom: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   // display: none;
   background-color: $main_color;
   border-top: 4px solid $secondary_color;
@@ -925,7 +1204,7 @@ h5 p.editable {
 
 .accept-cookies-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 
   @include tablet {
     flex-direction: row;
@@ -950,7 +1229,7 @@ h5 p.editable {
     &:nth-of-type(1) {
       color: #00AA00;
     }
-    
+
     &:hover {
       color: $main_color;
       cursor: pointer;

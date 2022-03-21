@@ -102,6 +102,57 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Services accordion
+  const accordions = document.querySelectorAll(".accordion");
+
+  if (accordions) {
+    for (let i = 0; i < accordions.length; i++) {
+      accordions[i].addEventListener("click", () => {
+        accordions[i].classList.toggle("opened");
+        const panel = accordions[i].nextElementSibling;
+        panel.classList.toggle("opened");
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = `${panel.scrollHeight}px`;
+        }
+      });
+    }
+    // Open the first accordion by default
+    accordions[0].click();
+  }
+
+  // ADAS vehicle graph
+  const clickables = document.querySelectorAll(".clickable-element");
+  const infos = document.querySelectorAll(".info");
+
+  if (clickables) {
+    for (let i = 0; i < clickables.length; i++) {
+      clickables[i].onmouseover = () => {
+        infos[i].style.display = "block";
+        infos[i].style.animationName = "element_appear";
+        infos[i].style.opacity = 1;
+        Array.from(infos).filter((info, j) => {
+          console.log(info);
+          if (j !== i) {
+            info.style.animationName = "element_disappear";
+            setTimeout(() => {
+              info.style.display = "none";
+            }, 190);
+          }
+        });
+      };
+      clickables[i].onmouseout = () => {
+        setTimeout(() => {
+          infos[i].style.animationName = "element_disappear";
+        }, 1000);
+        setTimeout(() => {
+          infos[i].style.display = "none";
+        }, 1190);
+      };
+    }
+  }
+
   // Replace copyright year
   const copyYear = document.querySelector("#copyright-year");
   const now = new Date();
