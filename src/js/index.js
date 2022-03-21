@@ -133,7 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
         infos[i].style.animationName = "element_appear";
         infos[i].style.opacity = 1;
         Array.from(infos).filter((info, j) => {
-          console.log(info);
           if (j !== i) {
             info.style.animationName = "element_disappear";
             setTimeout(() => {

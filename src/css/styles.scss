@@ -986,6 +986,26 @@ h5 p.editable {
       bottom: -53%;
     }
 
+    &.explanation {
+      display: block;
+      bottom: -20%;
+      opacity: 1;
+      text-align: center;
+      left: 10%;
+      
+      @include desktop {
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      @include tablet {
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
 
     @include tablet {
 
