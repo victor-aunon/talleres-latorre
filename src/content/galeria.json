@@ -1,6 +1,7 @@
 {
   "pageName": "Galería",
   "robots": "index, follow",
-  "canonical": "https://tallereslatorre.es/galeria",
-  "imageUrl": ""
+  "canonical": "https://talleresdelatorre.es/galeria",
+  "imageUrl": "src/img/galerias/bmw/chapa-pintura-malaga-bmw-m2-4_medium.webp",
+  "description": "Talleres de chapa y pintura en Málaga"
 }
