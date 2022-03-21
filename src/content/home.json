@@ -2,6 +2,6 @@
   "pageName": "Inicio",
   "robots": "index, follow",
   "canonical": "https://talleresdelatorre.es",
-  "imageUrl": "src/img/talleres_de_la_torre_medium.webp",
+  "imageUrl": "https://talleresdelatorre.es/src/img/talleres_de_la_torre_medium.webp",
   "description": "Talleres de chapa y pintura en Málaga"
 }
