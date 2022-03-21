@@ -30,18 +30,53 @@ block content
       | Diplomados para el perfecto calibrado de los sistemas de asistencia a la conducción y cámaras de su vehículo.
     .services
       .service
-        a(href="/servicios.html#chapa", title="Servicios de chapa") 
+        a(
+          href="/servicios.html#chapa",
+          title="Servicios de calibración de ADAS"
+        ) 
           picture
             source(
-              media="(min-width: 900px)",
-              srcset=require("./img/car_xsmall.png")
+              media="(min-width: 1500px)",
+              srcset=require("./img/servicios/servicio_calibrado_adas_small.jpg")
+            )
+            source(
+              media="(min-width: 750px)",
+              srcset=require("./img/servicios/servicio_calibrado_adas_xsmall.jpg")
+            )
+            source(
+              media="(min-width: 550px)",
+              srcset=require("./img/servicios/servicio_calibrado_adas_small.jpg")
             )
             source(
               media="(min-width: 300px)",
-              srcset=require("./img/car_thumbnail.png")
+              srcset=require("./img/servicios/servicio_calibrado_adas_xsmall.jpg")
             )
             img.service-image(
-              src=require("./img/car_small.png"),
+              src=require("./img/servicios/servicio_calibrado_adas_small.jpg"),
+              alt="Servicios de calibración de ADAS"
+            )
+          p.service-title Calibración ADAS
+      .service
+        a(href="/servicios.html#chapa", title="Servicios de chapa") 
+          picture
+            source(
+              media="(min-width: 1500px)",
+              srcset=require("./img/servicios/servicio_de_mecanica_de_chapa_small.jpg")
+            )
+            source(
+              media="(min-width: 750px)",
+              srcset=require("./img/servicios/servicio_de_mecanica_de_chapa_xsmall.jpg")
+            )
+            source(
+              media="(min-width: 550px)",
+              srcset=require("./img/servicios/servicio_de_mecanica_de_chapa_small.jpg")
+            )
+            source(
+              media="(min-width: 300px)",
+              srcset=require("./img/servicios/servicio_de_mecanica_de_chapa_xsmall.jpg")
+            )
+            img.service-image(
+              src=require("./img/servicios/servicio_de_mecanica_de_chapa_small.jpg"),
               alt="Servicios de chapa"
             )
           p.service-title Chapa
@@ -49,37 +84,26 @@ block content
         a(href="/servicios.html#chapa", title="Servicios de pintura") 
           picture
             source(
-              media="(min-width: 900px)",
-              srcset=require("./img/spray-paint_xsmall.png")
+              media="(min-width: 1500px)",
+              srcset=require("./img/servicios/servicio_de_pintura_small.jpg")
+            )
+            source(
+              media="(min-width: 750px)",
+              srcset=require("./img/servicios/servicio_de_pintura_xsmall.jpg")
+            )
+            source(
+              media="(min-width: 550px)",
+              srcset=require("./img/servicios/servicio_de_pintura_small.jpg")
             )
             source(
               media="(min-width: 300px)",
-              srcset=require("./img/spray-paint_thumbnail.png")
+              srcset=require("./img/servicios/servicio_de_pintura_xsmall.jpg")
             )
             img.service-image(
-              src=require("./img/spray-paint_small.png"),
+              src=require("./img/servicios/servicio_de_pintura_small.jpg"),
               alt="Servicios de pintura"
             )
           p.service-title Pintura
-      .service
-        a(
-          href="/servicios.html#chapa",
-          title="Servicios de calibración de ADAS"
-        ) 
-          picture
-            source(
-              media="(min-width: 900px)",
-              srcset=require("./img/calibrate_xsmall.png")
-            )
-            source(
-              media="(min-width: 300px)",
-              srcset=require("./img/calibrate_thumbnail.png")
-            )
-            img.service-image(
-              src=require("./img/calibrate_small.png"),
-              alt="Servicios de calibración de ADAS"
-            )
-          p.service-title Calibrado ADAS
 
     h2.section-title.fit Nuestros trabajos
     .works 
@@ -244,6 +268,8 @@ block content
         script(
           async,
           defer,
+          class="ce-script"
+          type="text/plain"
           crossorigin="anonymous",
           src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0",
           nonce="sjuCOJvs"
@@ -262,5 +288,8 @@ block content
           blockquote.fb-xfbml-parse-ignore(
             cite="https://www.facebook.com/talleresdelatorre/"
           )
+            p Para ver este contenido debe 
+              a(href="#", class="ce-accept") Aceptar las cookies
+              | . No se añadirá ninguna cookie si no ha iniciado sesión en Google ni Facebook.
             a(href="https://www.facebook.com/talleresdelatorre/")
               | Talleres De La Torre en Facebook

@@ -353,7 +353,7 @@ h5 p.editable {
 }
 
 .service {
-  flex: 1 1 30%;
+  width: 75%;
   margin: 2rem 0;
   max-width: 350px;
   background: linear-gradient(
@@ -368,28 +368,25 @@ h5 p.editable {
   align-items: center;
   transition: all 0.2s linear;
 
-  // Reduce the image of the ADAS element
+  // Modify the text of the ADAS element
   &:nth-of-type(1) {
-    .service-image {
-      width: 60%;
-      margin: 10% 20%;
+    .service-title {
+      transform: translate(-50%, -5%);
     }
-
-    // @include tablet {
-    //   margin-right: 0;
-    // }
   }
 
   @include tablet {
+    flex: 1 1 30%;
     margin: 2rem 1rem 1rem 0;
   }
 
   @include desktop {
+    flex: 1 1 30%;
     margin: 2rem 3rem;
   }
 
   a {
-    display: flex;
+    position: relative;
     height: 100%;
     width: calc(100% - 1rem);
     flex-direction: column;
@@ -397,24 +394,32 @@ h5 p.editable {
     background-color: #ffffff;
     margin: 0.5rem;
     border-radius: 12px;
-    padding: 1rem;
     text-decoration: none;
   }
 
   .service-image {
-    width: 80%;
-    margin: 0 12.5% 0 7.5%;
-    max-height: 300px;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+    border-radius: 12px;
   }
 
   .service-title {
-    color: $main_color;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    color: #FFFFFF;
     font-family: $title_font;
     font-weight: 600;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1rem 0 0 0;
-    width: 200px;
+    transform: translate(-50%, -30%);
+    text-shadow:
+        -2px -2px 0 $main_color,
+         2px -2px 0 $main_color,
+        -2px  2px 0 $main_color,
+         2px  2px 0 $main_color;
 
     @include tablet {
       width: unset;
@@ -430,15 +435,8 @@ h5 p.editable {
       $secondary_color 60%
     );
 
-    a {
-      background: linear-gradient(
-        45deg,
-        #eaeaea 35%,
-        #ffffff 45%,
-        #ffffff 50%,
-        #ffffff 55%,
-        #eaeaea 65%
-      );
+    .service-image {
+      filter: brightness(125%)
     }
   }
 }
