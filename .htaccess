@@ -1,0 +1,4 @@
+# Add to ssl.conf to skip modsecurity rule that blocks pages after accepting
+# cookies using cookie consent library
+
+SecRuleRemoveById  981172
