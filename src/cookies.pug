@@ -40,75 +40,35 @@ block content
         th Caducidad
         th Tipo
       tr
-        td ce-cookie
+        td cc_cookie
         td Almacena la respuesta del visitante a la aceptación de las cookies de la página.
         td 30 días
         td Propia/técnica
-      tr
-        td 1P_JAR
-        td Cookie de Google para proveer anuncios o retargeting. Esta cookie se almacena en su navegador si ha aceptado las cookies necesarias de los servicios de Google.
-        td 30 días
-        td Terceros/análisis
-      tr
-        td CONSENT
-        td Cookie de Google para almacenar las preferencias del consentimiento de cookies. Esta cookie se almacena en su navegador si ha aceptado las cookies necesarias de los servicios de Google.
-        td 20 años
-        td Terceros/preferencias
-      tr
-        td NID
-        td Cookie de Google para almacenar las preferencias de aprovisionamiento de anuncios o retargeting. Esta cookie se almacena en su navegador si ha aceptado las cookies necesarias de los servicios de Google.
-        td 6 meses
-        td Terceros/márketing-análisis
-      tr
-        td SID
-        td Cookie de Google para prevenir el fraude en el aprovisionamiento de anuncios o retargeting. Esta cookie se almacena en su navegador si ha aceptado las cookies e iniciado sesión en los servicios de Google.
-        td 2 años
-        td Terceros/márketing-análisis
-      tr
-        td HSID
-        td Cookie de Google para prevención de fraudes. Esta cookie se almacena en su navegador si ha aceptado las cookies e iniciado sesión en los servicios de Google.
-        td 2 años
-        td Terceros/técnica
-      tr
-        td APISID, SAPISID, SSID, PAPISID, __Secure-XXSID
-        td Cookie de Google para proveer anuncios o retargeting. Esta cookie se almacena en su navegador si ha aceptado las cookies e iniciado sesión en los servicios de Google.
-        td 2 años
-        td Terceros/márketing
-      tr
-        td SIDCC
-        td Cookie de Google para identificar tráfico web confiable. Esta cookie se almacena en su navegador si ha aceptado las cookies e iniciado sesión en los servicios de Google.
-        td 1 año
-        td Terceros/técnica
-      tr
-        td DV
-        td Cookie de Google para proveer anuncios o retargeting. Esta cookie se almacena en su navegador si ha aceptado las cookies e iniciado sesión en los servicios de Google.
-        td 1 día
-        td Terceros/márketing
       tr
         td datr
         td Cookie de Facebook para proveer servicios de prevención de fraudes. Esta cookie se almacena en su navegador si ha aceptado las cookies necesarias de Facebook.
         td 2 años
         td Terceros/análisis
       tr
+        td sb
+        td Cookie de Facebook para para almacenar los detalles del navegador. Esta cookie se almacena en su navegador si ha aceptado las cookies necesarias de Facebook.
+        td 2 años
+        td Terceros/análisis
+      tr
+        td wd
+        td Cookie de Facebook para para almacenar la resolución de pantalla. Esta cookie se almacena en su navegador si ha aceptado las cookies necesarias de Facebook.
+        td 1 semana
+        td Terceros/análisis
+      tr
         td c_user
         td Cookie de Facebook para para almacenar el identificador único de usuario. Esta cookie se almacena en su navegador si ha aceptado las cookies e iniciado sesión en Facebook.
         td 30 días
-        td Terceros/técnica
+        td Terceros/análisis
       tr
         td xs
         td Cookie de Facebook para para almacenar el identificador único de usuario. Esta cookie se almacena en su navegador si ha aceptado las cookies e iniciado sesión en Facebook.
         td 3 meses
         td Terceros/análisis
-      tr
-        td sb
-        td Cookie de Facebook para para almacenar los detalles del navegador. Esta cookie se almacena en su navegador si ha aceptado las cookies e iniciado sesión en Facebook.
-        td 2 años
-        td Terceros/análisis
-      tr
-        td wd
-        td Cookie de Facebook para para almacenar la resolución de pantalla. Esta cookie se almacena en su navegador si ha aceptado las cookies e iniciado sesión en Facebook.
-        td 1 semana
-        td Terceros/ténica
 
 
     p Para las cookies de análisis necesitamos su consentimiento que podremos obtener si pulsa en el botón “Acepto” en el mensaje de información que se muestra al acceder a nuestra página web.
@@ -148,5 +108,5 @@ block content
           a.legal-link(href="https://support.apple.com/es-es/HT201265" target="_blank" rel="noreferrer noopener nofollow") Safari para iOS
           | : menú Ajustes > Safari > Avanzado > Datos de sitios web
 
-    p Puede cambiar su consentimiento de cookies en esta web pulsando el siguiente botón
-      button#revoke-consent.cookie-consent-btn Revocar el consentimiento
+    p Puede gestionar sus preferencias de cookies en esta web pulsando el siguiente botón
+      button#revoke-consent.cookie-consent-btn(data-cc="c-settings") Gestionar cookies

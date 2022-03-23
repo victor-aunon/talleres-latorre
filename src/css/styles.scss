@@ -1197,61 +1197,77 @@ h5 p.editable {
 /* =============== FIN DE ESTILOS DE PAGINAS LEGALES =============== */
 
 /* =============== COOKIE BANNER =============== */
-.cookie-banner {
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  // display: none;
-  background-color: $main_color;
-  border-top: 4px solid $secondary_color;
-  padding: 0.5rem 2rem;
-  color: #FFFFFF;
-  font-size: 0.9rem;
+// .cookie-banner {
+//   position: sticky;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   // display: none;
+//   background-color: $main_color;
+//   border-top: 4px solid $secondary_color;
+//   padding: 0.5rem 2rem;
+//   color: #FFFFFF;
+//   font-size: 0.9rem;
 
-  a {
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
-  }
-}
+//   a {
+//     color: inherit;
+//     font-weight: bold;
+//     text-decoration: none;
+//   }
+// }
 
-.cookie-banner {
-  display: block;
-}
+// .cookie-banner {
+//   display: block;
+// }
 
-.accept-cookies-container {
-  display: flex;
-  flex-direction: column;
+// .accept-cookies-container {
+//   display: flex;
+//   flex-direction: column;
 
-  @include tablet {
-    flex-direction: row;
-  }
+//   @include tablet {
+//     flex-direction: row;
+//   }
 
-  .accept-cookies-btn-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 40%;
-  }
+//   .accept-cookies-btn-container {
+//     display: flex;
+//     flex-direction: row;
+//     max-width: 40%;
+//   }
 
-  .accept-cookies-btn {
-    padding: 0.5rem 1rem;
-    max-height: 60px;
-    margin-left: 0.5rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border: 2px solid $secondary_color;
-    border-radius: 8px;
-    background-color: #FFFFFF;
+//   .accept-cookies-btn {
+//     padding: 0.5rem 1rem;
+//     max-height: 60px;
+//     margin-left: 0.5rem;
+//     font-weight: bold;
+//     font-size: 1.1rem;
+//     border: 2px solid $secondary_color;
+//     border-radius: 8px;
+//     background-color: #FFFFFF;
 
-    &:nth-of-type(1) {
-      color: #00AA00;
-    }
+//     &:nth-of-type(1) {
+//       color: #00AA00;
+//     }
 
-    &:hover {
-      color: $main_color;
-      cursor: pointer;
-    }
-  }
-}
+//     &:hover {
+//       color: $main_color;
+//       cursor: pointer;
+//     }
+//   }
+// }
 /* =============== FIN DE COOKIE BANNER =============== */
+
+/* =============== COOKIE CONSENT =============== */
+
+#c-p-bn, #c-s-bn, #s-all-bn {
+  background-color: $main_color !important;
+  color: #FFFFFF;
+  
+  &:hover {
+    background-color: #01316b !important;
+  }
+}
+
+#c-ttl, .cc-link {
+  color: $main_color;
+}
+/* =============== FIN DE COOKIE CONSENT =============== */

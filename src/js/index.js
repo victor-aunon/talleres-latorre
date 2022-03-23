@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Services accordion
   const accordions = document.querySelectorAll(".accordion");
 
-  if (accordions) {
+  if (accordions.length > 0) {
     for (let i = 0; i < accordions.length; i++) {
       accordions[i].addEventListener("click", () => {
         accordions[i].classList.toggle("opened");

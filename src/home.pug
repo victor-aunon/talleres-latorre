@@ -259,7 +259,7 @@ block content
     .map-and-fb
       .map
         iframe#google-maps(
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCT9vrw2zGRXQ9DN5cYGfQGuHhvPmnl_n8&q=place_id:ChIJwR8_WYz5cg0RZrMGYwSD1QA&zoom=14",
+          src="https://maps.googleapis.com/maps/embed/v1/place?key=AIzaSyCT9vrw2zGRXQ9DN5cYGfQGuHhvPmnl_n8&q=place_id:ChIJwR8_WYz5cg0RZrMGYwSD1QA&zoom=14",
           frameborder="0",
           allowfullscreen, title="Talleres de la Torre en Maps"
         )
@@ -268,7 +268,7 @@ block content
         script(
           async,
           defer,
-          class="ce-script"
+          data-cookiecategory="analytics"
           type="text/plain"
           crossorigin="anonymous",
           src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0",
@@ -289,7 +289,7 @@ block content
             cite="https://www.facebook.com/talleresdelatorre/"
           )
             p Para ver este contenido debe 
-              a(href="#", class="ce-accept") Aceptar las cookies
-              | . No se añadirá ninguna cookie si no ha iniciado sesión en Google ni Facebook.
+              a(href="#", data-cc="accept-all") Aceptar las cookies
+              | . No se añadirá ninguna cookie  de tracking si no ha iniciado sesión en Google ni Facebook.
             a(href="https://www.facebook.com/talleresdelatorre/")
               | Talleres De La Torre en Facebook

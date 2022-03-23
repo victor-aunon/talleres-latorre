@@ -82,11 +82,6 @@ module.exports = {
           to: "",
           noErrorOnMissing: true
         },
-        { 
-          from: "./src/js/cookies-enabler.js",
-          to: "./js/cookies-enabler.js",
-          noErrorOnMissing: true
-        },
       ],
     }),
   ],
@@ -110,46 +105,22 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-            'style-loader',
-            {
-                loader: "css-loader",
-            },
-            {
-                loader: 'sass-loader',
-                options: {
-                    sourceMap: true,
-                }
-              }
-          ],
+          'style-loader',
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            }
+          }
+        ],
       },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-      // {
-      //   test: /\.(png|jpe?g|gif|svg)$/i,
-      //   type: "asset",
-      //   generator: {
-      //     filename: 'img/[name][ext]',
-      //   },
-      // },
-      // {
-      //   test: /\.(png|jpe?g|gif|svg|webp)$/i,
-      //   use : [
-      //     {
-      //       loader: `img-optimize-loader`,
-      //       options: {
-      //         compress: {
-      //           webp: {
-      //             quality: 95,
-      //           },
-      //           disableOnDevelopment: true,
-      //         },
-      //         name: 'img/[name].[ext]',
-      //       }
-      //     }
-      //   ]
-      // },
     ],
   },
 };
