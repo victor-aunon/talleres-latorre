@@ -850,11 +850,11 @@ h5 p.editable {
     text-align: left;
     border: 1px solid #555555;
 
-    &:nth-of-type(1) {
+    &.first-accordion {
       border-radius: 10px 10px 0 0;
     }
 
-    &:nth-last-of-type(1) {
+    &.last-accordion {
       border-radius: 0 0 10px 10px;
 
       &.opened{
@@ -896,7 +896,7 @@ h5 p.editable {
     transition: max-height 0.2s ease-out;
 
     &.opened {
-      &:nth-last-of-type(1) {
+      &.last-panel {
         border-bottom: 1px solid #555555;
         border-radius: 0 0 10px 10px;
       }
