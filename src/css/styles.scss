@@ -517,6 +517,7 @@ h5 p.editable {
   input[type="range"],
   input[type="range"]::-webkit-slider-runnable-track,
   input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
     -webkit-appearance: none;
     background-color: transparent;
   }
