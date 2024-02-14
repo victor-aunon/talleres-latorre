@@ -29,10 +29,10 @@ module.exports = {
       },
       chunks: ['bundle', 'photoswipeGallery'],
     }),
-    new HtmlWebpackPlugin({
-      template: "./src/gallery_aux.pug",
-      filename: "galeria_aux.html",
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/gallery_aux.pug",
+    //   filename: "galeria_aux.html",
+    // }),
     new HtmlWebpackPlugin({
       template: "./src/servicios.pug",
       filename: "servicios.html",
