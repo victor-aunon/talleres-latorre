@@ -20,7 +20,9 @@ jobs:
           submodules: true
           lfs: false
       - name: Install requirements for img-optimize-loader
-        run: sudo apt-get install -y libjpeg jpeg-dev libjpeg-turbo-dev libpng-dev libtiff-dev libgif-dev libwebp-dev
+        run: sudo apt-get install -y libjpeg-dev libpng-dev libtiff-dev libgif-dev libwebp-dev
+      - name: Remove cwebp-bin
+        run: sudo rm -R ./node_modules/cwebp-bin 
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
