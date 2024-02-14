@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
-          lfs: false
+          lfs: true
       - name: Install requirements for img-optimize-loader
         run: sudo apt-get install -y libjpeg-dev libpng-dev libtiff-dev libgif-dev libwebp-dev
       - name: Compile libwebp
